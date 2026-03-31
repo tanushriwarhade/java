@@ -78,16 +78,31 @@ import java.util.*;
 public class Condition {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        int button = sc.nextInt();
+       
         int x = sc.nextInt();
-        // int y = sc.nextInt();
-        // int z = sc.nextInt();
-        if (x == 1 ) {
-            System.out.println("Hello!");
-               } else {
-                System.out.println("Namaste!");
-               } else {
-                System.out.println("Bonjour!");
-               }
-    }
+//         // int y = sc.nextInt();
+//         // int z = sc.nextInt();
+//         if (x == 1 ) {
+//             System.out.println("Hello!");
+//                } else if(x == 2){
+//                 System.out.println("Namaste!");
+//                } else if(x == 3){
+//                 System.out.println("Bonjour!");
+//                } else {
+//                 System.out.println("Invalid button");
+//                }
+//     }
+// }
+
+
+switch(x) {
+    case 1 : System.out.println("Hello");
+    break;
+    case 2 : System.out.println("Namaste");
+    break;
+    case 3 : System.out.println("Bonjour");
+    break;
+    default : System.out.println("Invalid Button");
+}
+  }
 }
